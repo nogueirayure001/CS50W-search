@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo.png" type="image/icon type" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../styles/styles.scss" />
+
+    <title>CS50 Search</title>
+  </head>
+
+  <body class="bg-light">
+    <header class="header container-fluid px-5 text-uppercase shadow">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand p-0 m-0" title="CS50 Search" href="/">
+          <img src="/images/logo.png" width="70" alt="" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsible"
+        >
+          <span class="text">open navigation menu</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse py-2 py-sm-0" id="collapsible">
+          <ul
+            class="col navbar-nav justify-content-end text-center p-0 m-sm-0 mt-3"
+          >
+            <li class="nav-item me-sm-3">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-item me-sm-3">
+              <a class="nav-link" href="image.html">Image Search</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="advanced.html">
+                Advanced Search
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main advanced-page container-fluid px-3 pb-3">
+      <h1 class="h1 text-center text-primary text-uppercase">
+        CS50 Advanced Search
+      </h1>
+
+      <form
+        class="form container-fluid d-flex flex-column gap-3"
+        action="https://www.google.com/search"
+        target="_blank"
+      >
+        <h2 class="h4 text-dark text-center m-0">Find pages with...</h2>
+
+        <div class="form-floating">
+          <input
+            id="all-words"
+            class="form-control form-control-lg rounded-pill"
+            type="text"
+            name="as_q"
+            placeholder="...all these words"
+          />
+          <label for="all-words">...all these words</label>
+        </div>
+
+        <div class="form-floating">
+          <input
+            id="exact-words"
+            class="form-control form-control-lg rounded-pill"
+            type="text"
+            name="as_epq"
+            placeholder="...this exact word or phrase"
+          />
+          <label for="exact-words">...this exact word or phrase</label>
+        </div>
+
+        <div class="form-floating">
+          <input
+            id="any-words"
+            class="form-control form-control-lg rounded-pill"
+            type="text"
+            name="as_oq"
+            placeholder="...any of these words"
+          />
+          <label for="any-words">...any of these words</label>
+        </div>
+
+        <div class="form-floating">
+          <input
+            id="none-words"
+            class="form-control form-control-lg rounded-pill"
+            type="text"
+            name="as_eq"
+            placeholder="...none of these words"
+          />
+          <label for="none-words">...none of these words</label>
+        </div>
+
+        <input
+          class="btn btn-lg btn-primary w-100 align-self-center text-uppercase rounded-pill"
+          type="submit"
+          value="Go!"
+        />
+      </form>
+    </main>
+  </body>
+</html>

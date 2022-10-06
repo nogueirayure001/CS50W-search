@@ -1,0 +1,133 @@
+.header {
+  .navbar {
+    .navbar-brand {
+      img {
+        width: 4.5rem;
+
+        @media screen and (min-width: 576px) {
+          width: 5.5rem;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      .text {
+        position: absolute;
+        left: -9999px;
+        visibility: hidden;
+      }
+    }
+
+    .nav-link {
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+  }
+}
+
+.main {
+  padding-top: 3rem;
+
+  .h1 {
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+  }
+
+  .form {
+    width: 80%;
+
+    & .form-control-container {
+      position: relative;
+
+      & label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        border-right: 1px solid #0d6efd;
+        overflow: hidden;
+        z-index: 9999;
+        cursor: text;
+        animation: showtext 5s linear both infinite,
+          blink 0.7s linear both infinite;
+
+        @keyframes showtext {
+          from,
+          to {
+            width: 0%;
+          }
+
+          25% {
+            width: 0%;
+          }
+
+          50% {
+            width: 75px;
+          }
+
+          75% {
+            width: 75px;
+          }
+        }
+
+        @keyframes blink {
+          from,
+          to {
+            border-right-color: transparent;
+          }
+
+          50% {
+            border-right-color: #0d6efd;
+          }
+        }
+      }
+
+      & .form-control {
+        position: relative;
+        text-align: center;
+        letter-spacing: 1.2px;
+        caret-color: #0d6efd;
+      }
+    }
+
+    & .form-floating {
+      & .form-control {
+        padding-left: 2rem;
+        text-align: left;
+        letter-spacing: 1.2px;
+        caret-color: #0d6efd;
+      }
+    }
+
+    & input[type='submit'] {
+      letter-spacing: 2px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 500px;
+
+      & input[type='submit'] {
+        max-width: 60%;
+      }
+    }
+  }
+
+  .img-fluid {
+    position: relative;
+    top: -4rem;
+    max-width: 400px;
+    z-index: -1;
+  }
+
+  &.advanced-page {
+    @media screen and (min-width: 960px) {
+      background-image: url('/images/hero-img-3.svg');
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: 40%;
+    }
+  }
+}
