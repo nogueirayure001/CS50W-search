@@ -7,7 +7,7 @@
 </h3>
 
 <h4 align="center"> 
-	 Status: In progress
+	 Status: Finished
 </h4>
 
 <p align="center">
@@ -28,7 +28,7 @@ CS50 search implements a front-end for google search, including: common search, 
 
 ## Live version
 
-Access the [live version](https://space-travel101.netlify.app/)
+Access the [live version](https://cs50w-search.netlify.app/)
 
 ---
 
@@ -70,7 +70,7 @@ Access the [live version](https://space-travel101.netlify.app/)
 
 ### Pre-requisites
 
-Before you begin, you will need to have [Node.js] (https://nodejs.org/en/) installed on your machine.
+Before you begin, you will need to have [Node.js](https://nodejs.org/en/) installed on your machine.
 
 #### Running the web application (Frontend)
 
